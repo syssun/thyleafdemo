@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<div th:fragment="header">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <img  height="30px" width="20px" src="/img/logo.jpg" th:src="@{/img/logo.jpg}"/>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li onclick="wel()"><a href="#">欢迎来到这</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="javascript:;">
+                            <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> &nbsp; &nbsp;
+                            服务热线 4008007006</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
+<script>
+    function wel(){
+        alert(1)
+    }
+</script>
+</body>
+</html>

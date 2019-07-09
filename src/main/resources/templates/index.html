@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="/bts/css/bootstrap.css"/>
+    <style>
+        .footer{
+            min-height: 200px;
+            background-color: #adadad;
+            padding-top:20px;
+        }
+        .footer ul li{
+            margin-top:5px;
+        }
+        .navbar{
+            height: 20px !important;
+        }
+    </style>
+</head>
+<body>
+<div th:replace="common/header::header"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="/img/a.jpg" th:src="@{/img/b.jpg}" alt="...">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>...</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="/img/a.jpg" alt="...">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>...</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="/img/a.jpg" alt="...">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>...</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="/img/a.jpg" alt="...">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">联系我们</div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">您的姓名</label>
+                            <input type="text" class="form-control" id="name" placeholder="请输入您的称呼">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">联系方式</label>
+                            <input type="number" class="form-control" id="phone" placeholder="请输入您的联系方式">
+                        </div>
+                        <div class="form-group">
+                            <label for="remark">您的留言</label>
+                            <textarea class="form-control" id="remark" placeholder="请输入您的期望，或者意见建议" rows="3"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">立即提交</button>
+                    </form>
+
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div th:replace="common/footer::footer"></div>
+<script src="/js/jquery.min.js"></script>
+</body>
+</html>
